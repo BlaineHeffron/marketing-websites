@@ -271,119 +271,419 @@
       </div>
     </section>
 
-    <!-- Comparison Section -->
+    <!-- Competitive Analysis Section -->
     <section id="comparison" class="py-20 px-4 bg-gray-50" aria-labelledby="comparison-heading">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
           <h2 id="comparison-heading" class="text-3xl font-bold mb-4">Why technicians choose EquipLog</h2>
-          <p class="text-xl text-gray-600">Purpose-built for independent equipment-focused technicians</p>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Most field service software is built for enterprise operations with complex workflows and enterprise pricing. EquipLog focuses on what independent technicians actually need: <strong>equipment tracking, service history, and warranty management</strong> at a price that makes sense.</p>
         </div>
 
-        <!-- Comparison Cards -->
-        <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <article class="bg-white p-6 rounded-2xl border border-gray-100">
-            <h3 class="text-xl font-semibold mb-4">vs ServiceTitan</h3>
-            <p class="text-gray-600 mb-4">ServiceTitan costs <strong>$200+/user/month</strong> and is built for large operations with complex workflows.</p>
-            <p class="text-primary font-medium">EquipLog is just <strong>$14.99/month</strong> - designed specifically for independent techs who need powerful equipment tracking without enterprise complexity.</p>
+        <!-- Detailed Competitor Cards -->
+        <div class="grid lg:grid-cols-2 gap-8 mb-16" role="list" aria-label="Competitor comparisons">
+          <!-- ServiceTitan Card -->
+          <article class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm" aria-labelledby="servicetitan-heading">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 id="servicetitan-heading" class="text-2xl font-bold text-gray-900">vs ServiceTitan</h3>
+                <p class="text-gray-500 mt-1">Enterprise HVAC & Plumbing Platform</p>
+              </div>
+              <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">$250-500/user/mo</span>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-2">What They Offer:</h4>
+                <ul class="text-gray-600 text-sm space-y-1" role="list">
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Full CRM with marketing automation</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Pricebook Pro with supplier pricing integration</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Payment processing and financing options</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Marketing tools and call tracking</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-2">Key Weaknesses:</h4>
+                <ul class="text-gray-600 text-sm space-y-1" role="list">
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Expensive:</strong> $250-500/user/month plus implementation fees</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Complex setup:</strong> Implementation can take over a year</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Enterprise focus:</strong> 76% of users have 11-200 employees</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Steep learning curve:</strong> Requires extensive training</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+              <h4 class="font-semibold text-primary mb-2">EquipLog Advantage:</h4>
+              <p class="text-gray-700 text-sm">Get started in minutes, not months. EquipLog at <strong>$14.99/month</strong> gives you the equipment tracking, service history, and warranty management you need without paying for CRM features you won't use. Perfect for independent technicians and small teams.</p>
+            </div>
           </article>
-          <article class="bg-white p-6 rounded-2xl border border-gray-100">
-            <h3 class="text-xl font-semibold mb-4">vs Jobber</h3>
-            <p class="text-gray-600 mb-4">Jobber focuses on scheduling and invoicing but <strong>lacks detailed equipment history</strong> and service tracking.</p>
-            <p class="text-primary font-medium">EquipLog specializes in <strong>equipment tracking</strong> - every service record, diagnostic reading, and warranty tied to each unit.</p>
+
+          <!-- Jobber Card -->
+          <article class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm" aria-labelledby="jobber-heading">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 id="jobber-heading" class="text-2xl font-bold text-gray-900">vs Jobber</h3>
+                <p class="text-gray-500 mt-1">Small-Medium Field Service Management</p>
+              </div>
+              <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium">$69-349/mo</span>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-2">What They Offer:</h4>
+                <ul class="text-gray-600 text-sm space-y-1" role="list">
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Drag-and-drop calendar scheduling</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Route optimization with GPS tracking</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Client portal and online booking</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> AI voice-to-text for notes</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-2">Key Weaknesses:</h4>
+                <ul class="text-gray-600 text-sm space-y-1" role="list">
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>No equipment tracking:</strong> Lacks detailed equipment history</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Limited inventory:</strong> Basic inventory management only</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Scalability issues:</strong> Not suitable for larger operations</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Basic reporting:</strong> Limited advanced analytics</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+              <h4 class="font-semibold text-primary mb-2">EquipLog Advantage:</h4>
+              <p class="text-gray-700 text-sm">Jobber excels at scheduling but treats equipment as an afterthought. EquipLog <strong>specializes in equipment tracking</strong> - complete service history, diagnostic logs, and warranty alerts tied to every unit you service. All for just <strong>$14.99/month</strong>.</p>
+            </div>
           </article>
-          <article class="bg-white p-6 rounded-2xl border border-gray-100">
-            <h3 class="text-xl font-semibold mb-4">vs Housecall Pro</h3>
-            <p class="text-gray-600 mb-4">Housecall Pro is a <strong>general field service tool</strong> built for various home service businesses.</p>
-            <p class="text-primary font-medium">EquipLog is <strong>purpose-built for equipment-focused technicians</strong> - HVAC, appliance repair, and specialty trades.</p>
+
+          <!-- Housecall Pro Card -->
+          <article class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm" aria-labelledby="housecallpro-heading">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 id="housecallpro-heading" class="text-2xl font-bold text-gray-900">vs Housecall Pro</h3>
+                <p class="text-gray-500 mt-1">Home Service Professionals Platform</p>
+              </div>
+              <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium">$59-299+/mo</span>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-2">What They Offer:</h4>
+                <ul class="text-gray-600 text-sm space-y-1" role="list">
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Scheduling and dispatching tools</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Flat rate price book ($149/mo add-on)</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> GPS tracking ($20/vehicle add-on)</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> QuickBooks integration (higher tiers)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-2">Key Weaknesses:</h4>
+                <ul class="text-gray-600 text-sm space-y-1" role="list">
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Add-on costs:</strong> Per-user pricing adds up quickly</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Basic plan limits:</strong> No QuickBooks or GPS on Basic</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Generalist approach:</strong> Built for all home services, not specialized</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Limited equipment focus:</strong> No dedicated equipment tracking</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+              <h4 class="font-semibold text-primary mb-2">EquipLog Advantage:</h4>
+              <p class="text-gray-700 text-sm">Housecall Pro serves everyone from cleaners to contractors, so nothing is optimized for equipment-focused technicians. EquipLog is <strong>purpose-built for HVAC, appliance, and specialty trades</strong> who need detailed equipment records, not general job management.</p>
+            </div>
+          </article>
+
+          <!-- FieldEdge Card -->
+          <article class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm" aria-labelledby="fieldedge-heading">
+            <div class="flex items-start justify-between mb-6">
+              <div>
+                <h3 id="fieldedge-heading" class="text-2xl font-bold text-gray-900">vs FieldEdge</h3>
+                <p class="text-gray-500 mt-1">QuickBooks-Focused HVAC Software</p>
+              </div>
+              <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Custom Quotes Only</span>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-2">What They Offer:</h4>
+                <ul class="text-gray-600 text-sm space-y-1" role="list">
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Strong QuickBooks integration (saves 20+ hrs/week)</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Customer history auto-pull on calls</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Field invoicing and payments</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-400 mt-0.5" aria-hidden="true">-</span> Select, Premier, and Elite tier options</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-2">Key Weaknesses:</h4>
+                <ul class="text-gray-600 text-sm space-y-1" role="list">
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>No free trial:</strong> Must commit before testing</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Hidden pricing:</strong> No transparent pricing on website</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>Required onboarding:</strong> Mandatory dedicated setup process</li>
+                  <li class="flex items-start gap-2"><span class="text-red-500 mt-0.5" aria-hidden="true">!</span> <strong>QuickBooks dependent:</strong> Best value only for QB users</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+              <h4 class="font-semibold text-primary mb-2">EquipLog Advantage:</h4>
+              <p class="text-gray-700 text-sm">FieldEdge requires sales calls and custom quotes just to see pricing. EquipLog offers <strong>transparent $14.99/month pricing</strong>, a 30-day free trial, and self-service signup. Start tracking equipment in minutes, not weeks of onboarding.</p>
+            </div>
           </article>
         </div>
 
-        <!-- Comparison Table -->
-        <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden">
-          <div class="overflow-x-auto">
-            <table class="w-full" role="table" aria-label="Feature comparison between EquipLog and competitors">
-              <thead>
-                <tr class="bg-gray-50 border-b border-gray-100">
-                  <th scope="col" class="text-left p-4 font-semibold">Feature</th>
-                  <th scope="col" class="text-center p-4 font-semibold text-primary">EquipLog<br><span class="text-sm font-normal text-gray-500">$14.99/mo</span></th>
-                  <th scope="col" class="text-center p-4 font-semibold">ServiceTitan<br><span class="text-sm font-normal text-gray-500">$200+/mo</span></th>
-                  <th scope="col" class="text-center p-4 font-semibold">Jobber<br><span class="text-sm font-normal text-gray-500">$49+/mo</span></th>
-                  <th scope="col" class="text-center p-4 font-semibold">Housecall Pro<br><span class="text-sm font-normal text-gray-500">$59+/mo</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b border-gray-100">
-                  <td class="p-4">Equipment History Tracking</td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="Not included">&#10007;</span></td>
-                  <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
-                </tr>
-                <tr class="border-b border-gray-100 bg-gray-50">
-                  <td class="p-4">Warranty Tracking & Alerts</td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="Not included">&#10007;</span></td>
-                  <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="Not included">&#10007;</span></td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="p-4">Diagnostic Logging</td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="Not included">&#10007;</span></td>
-                  <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="Not included">&#10007;</span></td>
-                </tr>
-                <tr class="border-b border-gray-100 bg-gray-50">
-                  <td class="p-4">Photo Documentation with OCR</td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
-                  <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="p-4">Offline Access</td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
-                  <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
-                  <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
-                </tr>
-                <tr class="border-b border-gray-100 bg-gray-50">
-                  <td class="p-4">Parts Cost Tracking</td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="p-4">Route Optimization</td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                </tr>
-                <tr>
-                  <td class="p-4">Smart Scheduling with Notifications</td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                  <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Included">&#10003;</span></td>
-                </tr>
-              </tbody>
-            </table>
+        <!-- Comprehensive Comparison Table -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-bold text-center mb-8">Complete Feature Comparison</h3>
+          <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+            <div class="overflow-x-auto">
+              <table class="w-full" role="table" aria-label="Comprehensive feature comparison between EquipLog and competitors">
+                <thead>
+                  <tr class="bg-gray-50 border-b border-gray-200">
+                    <th scope="col" class="text-left p-4 font-semibold min-w-[200px]">Category</th>
+                    <th scope="col" class="text-center p-4 font-semibold bg-blue-50 min-w-[140px]">
+                      <span class="text-primary">EquipLog</span><br>
+                      <span class="text-sm font-normal text-gray-600">$14.99/mo</span>
+                    </th>
+                    <th scope="col" class="text-center p-4 font-semibold min-w-[140px]">
+                      ServiceTitan<br>
+                      <span class="text-sm font-normal text-gray-500">$250-500/user/mo</span>
+                    </th>
+                    <th scope="col" class="text-center p-4 font-semibold min-w-[140px]">
+                      Jobber<br>
+                      <span class="text-sm font-normal text-gray-500">$69-349/mo</span>
+                    </th>
+                    <th scope="col" class="text-center p-4 font-semibold min-w-[140px]">
+                      Housecall Pro<br>
+                      <span class="text-sm font-normal text-gray-500">$59-299+/mo</span>
+                    </th>
+                    <th scope="col" class="text-center p-4 font-semibold min-w-[140px]">
+                      FieldEdge<br>
+                      <span class="text-sm font-normal text-gray-500">Custom Quote</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Pricing Category -->
+                  <tr class="bg-gray-100">
+                    <td colspan="6" class="p-3 font-semibold text-gray-900">Pricing</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">Monthly Cost (Solo User)</td>
+                    <td class="p-4 text-center bg-blue-50 font-semibold text-primary">$14.99</td>
+                    <td class="p-4 text-center text-gray-600">$250-500+</td>
+                    <td class="p-4 text-center text-gray-600">$69</td>
+                    <td class="p-4 text-center text-gray-600">$59-79</td>
+                    <td class="p-4 text-center text-gray-600">Quote Only</td>
+                  </tr>
+                  <tr class="border-b border-gray-100 bg-gray-50">
+                    <td class="p-4 text-gray-700">Free Trial</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="30 days">30 days</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Demo only">Demo</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="14 days">14 days</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="14 days">14 days</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="None">None</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">Transparent Pricing</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Partial">~</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="No">&#10007;</span></td>
+                  </tr>
+
+                  <!-- Equipment Management Category -->
+                  <tr class="bg-gray-100">
+                    <td colspan="6" class="p-3 font-semibold text-gray-900">Equipment Management</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">Complete Service History</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Core feature">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="No">&#10007;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Basic">~</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100 bg-gray-50">
+                    <td class="p-4 text-gray-700">Warranty Tracking & Alerts</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Core feature">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="No">&#10007;</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="No">&#10007;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Basic">~</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">Diagnostic Data Logging</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Core feature">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="No">&#10007;</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="No">&#10007;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100 bg-gray-50">
+                    <td class="p-4 text-gray-700">Photo Documentation with OCR</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Photos only">~</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Photos only">~</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">Parts Usage Tracking</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Basic">~</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+
+                  <!-- Scheduling Category -->
+                  <tr class="bg-gray-100">
+                    <td colspan="6" class="p-3 font-semibold text-gray-900">Scheduling & Dispatch</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">Calendar Scheduling</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100 bg-gray-50">
+                    <td class="p-4 text-gray-700">Route Optimization</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Add-on">Add-on</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">GPS Tracking</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="$20/vehicle">$20/veh</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100 bg-gray-50">
+                    <td class="p-4 text-gray-700">Maintenance Reminders</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+
+                  <!-- Integrations Category -->
+                  <tr class="bg-gray-100">
+                    <td colspan="6" class="p-3 font-semibold text-gray-900">Integrations</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">QuickBooks Integration</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Pro plan">Pro</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Higher tiers">Essentials+</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Core strength">&#10003;&#10003;</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100 bg-gray-50">
+                    <td class="p-4 text-gray-700">Data Export (PDF/CSV)</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">API Access</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Pro plan">Pro</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Higher tiers">Grow</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Higher tiers">MAX</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Higher tiers">Elite</span></td>
+                  </tr>
+
+                  <!-- Mobile Experience Category -->
+                  <tr class="bg-gray-100">
+                    <td colspan="6" class="p-3 font-semibold text-gray-900">Mobile Experience</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">Native iOS & Android Apps</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100 bg-gray-50">
+                    <td class="p-4 text-gray-700">Full Offline Mode</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
+                    <td class="p-4 text-center"><span class="text-yellow-500 text-xl" aria-label="Limited">~</span></td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="p-4 text-gray-700">Quick Setup (Self-Service)</td>
+                    <td class="p-4 text-center bg-blue-50"><span class="text-green-500 text-xl" aria-label="Minutes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="Months">&#10007;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-green-500 text-xl" aria-label="Yes">&#10003;</span></td>
+                    <td class="p-4 text-center"><span class="text-red-500 text-xl" aria-label="Required onboarding">&#10007;</span></td>
+                  </tr>
+                  <tr>
+                    <td class="p-4 text-gray-700">Learning Curve</td>
+                    <td class="p-4 text-center bg-blue-50 font-medium text-primary">Easy</td>
+                    <td class="p-4 text-center text-gray-600">Steep</td>
+                    <td class="p-4 text-center text-gray-600">Moderate</td>
+                    <td class="p-4 text-center text-gray-600">Moderate</td>
+                    <td class="p-4 text-center text-gray-600">Moderate</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="p-4 bg-gray-50 border-t border-gray-200">
+              <p class="text-sm text-gray-500 text-center">
+                <span class="inline-flex items-center gap-1"><span class="text-green-500" aria-hidden="true">&#10003;</span> Full feature</span>
+                <span class="mx-3">|</span>
+                <span class="inline-flex items-center gap-1"><span class="text-yellow-500" aria-hidden="true">~</span> Limited/Add-on</span>
+                <span class="mx-3">|</span>
+                <span class="inline-flex items-center gap-1"><span class="text-red-500" aria-hidden="true">&#10007;</span> Not available</span>
+              </p>
+            </div>
           </div>
-          <div class="p-4 bg-gray-50 border-t border-gray-100">
-            <p class="text-sm text-gray-500 text-center">
-              <span class="text-green-500" aria-hidden="true">&#10003;</span> = Full feature |
-              <span class="text-yellow-500" aria-hidden="true">~</span> = Limited/Basic |
-              <span class="text-red-500" aria-hidden="true">&#10007;</span> = Not available
-            </p>
+        </div>
+
+        <!-- Bottom Line Summary -->
+        <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white mb-12">
+          <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4">The Bottom Line</h3>
+            <p class="text-lg text-blue-100 mb-6">Enterprise software charges enterprise prices for features you may never use. General field service tools treat equipment tracking as an afterthought. <strong class="text-white">EquipLog is different.</strong></p>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+              <div>
+                <div class="text-3xl font-bold mb-2">$14.99</div>
+                <div class="text-blue-100">Per month, not per user</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold mb-2">5 min</div>
+                <div class="text-blue-100">Setup time, not 5 months</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold mb-2">100%</div>
+                <div class="text-blue-100">Equipment-focused features</div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="text-center mt-12">
-          <a href="#cta" class="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary transition shadow-lg shadow-blue-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+        <div class="text-center">
+          <a href="#cta" class="inline-block bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary transition shadow-lg shadow-blue-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
             Try EquipLog Free for 30 Days
           </a>
+          <p class="text-gray-500 text-sm mt-4">No credit card required. Cancel anytime.</p>
         </div>
       </div>
     </section>
