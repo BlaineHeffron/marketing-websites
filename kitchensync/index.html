@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KitchenSync - Food Safety & Compliance Made Simple</title>
+  <meta name="description" content="The easiest way for restaurants to manage temperature logs, cleaning checklists, and health inspection preparation.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#10B981',
+            secondary: '#059669',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">🍳</span>
+          <span class="text-xl font-bold text-primary">KitchenSync</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+          <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
+          <a href="#testimonials" class="text-gray-600 hover:text-gray-900">Reviews</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#" class="text-gray-600 hover:text-gray-900">Log In</a>
+          <a href="#cta" class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary transition">Start Free</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-4 bg-gradient-to-b from-emerald-50 to-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-block bg-emerald-100 text-primary px-4 py-1 rounded-full text-sm font-medium mb-6">
+        2,000+ restaurants trust KitchenSync
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+        Pass every health<br>inspection with confidence
+      </h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+        KitchenSync helps restaurants manage temperature logs, cleaning checklists, and compliance documentation - all from your phone.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#cta" class="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary transition shadow-lg shadow-emerald-200">
+          Start Free Trial
+        </a>
+        <a href="#demo" class="border border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-gray-400 transition">
+          Watch Demo
+        </a>
+      </div>
+      <p class="text-gray-500 text-sm mt-4">No credit card required. Setup in 3 minutes.</p>
+    </div>
+  </section>
+
+  <!-- App Preview -->
+  <section class="py-12 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="bg-gray-900 rounded-3xl p-4 shadow-2xl">
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+          <div class="text-6xl mb-4">📱</div>
+          <p class="text-gray-600">App Screenshot Preview</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Statement -->
+  <section class="py-20 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Paper temp logs are risky business</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Health inspectors find violations in paper-based systems every day.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+          <div class="text-4xl mb-4">📝</div>
+          <h3 class="text-xl font-semibold mb-2 text-red-700">Lost Paperwork</h3>
+          <p class="text-gray-600">Temp logs get wet, lost, or illegible. When inspectors ask, you're scrambling.</p>
+        </div>
+        <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+          <div class="text-4xl mb-4">⏱️</div>
+          <h3 class="text-xl font-semibold mb-2 text-red-700">Missed Tasks</h3>
+          <p class="text-gray-600">Staff forget to log temps. Cleaning tasks slip through the cracks. No accountability.</p>
+        </div>
+        <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+          <div class="text-4xl mb-4">💸</div>
+          <h3 class="text-xl font-semibold mb-2 text-red-700">Costly Violations</h3>
+          <p class="text-gray-600">Health code violations cost $500-$10,000+ each. Bad reviews can cost even more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">KitchenSync keeps you compliant</h2>
+          <p class="text-xl text-gray-600 mb-8">
+            Replace paper with a simple app that your whole team can use. Know your compliance status in real-time.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="text-green-500 text-xl">✓</div>
+              <div>
+                <p class="font-medium">One-tap temperature logging</p>
+                <p class="text-gray-600">Log temps in seconds. Automatic out-of-range alerts.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="text-green-500 text-xl">✓</div>
+              <div>
+                <p class="font-medium">Smart checklists</p>
+                <p class="text-gray-600">Opening, closing, and cleaning tasks. Never miss a step.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="text-green-500 text-xl">✓</div>
+              <div>
+                <p class="font-medium">Compliance score</p>
+                <p class="text-gray-600">See your status at a glance. Know where to improve.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="text-green-500 text-xl">✓</div>
+              <div>
+                <p class="font-medium">Inspection ready</p>
+                <p class="text-gray-600">Export records instantly when inspectors arrive.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-emerald-50 rounded-2xl p-8 text-center">
+          <div class="text-6xl mb-4">🌡️</div>
+          <p class="text-gray-600">Temperature Logging Demo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Everything you need for food safety</h2>
+        <p class="text-xl text-gray-600">Simple tools built for busy kitchens</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl border border-gray-200">
+          <div class="text-4xl mb-4">🌡️</div>
+          <h3 class="text-xl font-semibold mb-2">Temperature Logging</h3>
+          <p class="text-gray-600">Quick temp entry for coolers, freezers, and hot holding. Out-of-range alerts keep you safe.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-200">
+          <div class="text-4xl mb-4">✅</div>
+          <h3 class="text-xl font-semibold mb-2">Task Checklists</h3>
+          <p class="text-gray-600">Pre-built opening, closing, and cleaning checklists. Photo verification for accountability.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-200">
+          <div class="text-4xl mb-4">📊</div>
+          <h3 class="text-xl font-semibold mb-2">Compliance Dashboard</h3>
+          <p class="text-gray-600">Real-time compliance score. See what's done and what needs attention at a glance.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-200">
+          <div class="text-4xl mb-4">📋</div>
+          <h3 class="text-xl font-semibold mb-2">HACCP Support</h3>
+          <p class="text-gray-600">Critical control point monitoring. Document your food safety program properly.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-200">
+          <div class="text-4xl mb-4">🎓</div>
+          <h3 class="text-xl font-semibold mb-2">Certification Tracking</h3>
+          <p class="text-gray-600">Track food handler cards and manager certifications. Get expiration reminders.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-200">
+          <div class="text-4xl mb-4">📄</div>
+          <h3 class="text-xl font-semibold mb-2">Instant Reports</h3>
+          <p class="text-gray-600">Export PDF reports for health inspectors in seconds. All your records, ready to go.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Up and running in 3 minutes</h2>
+        <p class="text-xl text-gray-600">No training required. Your team can start today.</p>
+      </div>
+      <div class="space-y-8">
+        <div class="flex items-start gap-6">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">1</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Sign up and add your equipment</h3>
+            <p class="text-gray-600">Enter your coolers, freezers, and hot holding units. We'll set safe temperature ranges automatically.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-6">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">2</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Choose your checklists</h3>
+            <p class="text-gray-600">Pick from pre-built templates or create custom checklists for your kitchen's needs.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-6">
+          <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">3</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Start logging</h3>
+            <p class="text-gray-600">Your team logs temps and completes tasks from their phones. You see everything in real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Affordable for every restaurant</h2>
+        <p class="text-xl text-gray-600">Less than a health code fine. More peace of mind.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-gray-200">
+          <h3 class="text-xl font-semibold mb-2">Starter</h3>
+          <p class="text-gray-600 mb-6">For single locations</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold">$29</span>
+            <span class="text-gray-600">/month</span>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> 1 location</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> 3 users</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Temperature logging</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Basic checklists</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> 2GB storage</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Email support</li>
+          </ul>
+          <a href="#cta" class="block text-center border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-emerald-50 transition">
+            Start Free Trial
+          </a>
+        </div>
+        <div class="bg-primary text-white p-8 rounded-2xl relative">
+          <div class="absolute -top-3 right-8 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">Best Value</div>
+          <h3 class="text-xl font-semibold mb-2">Professional</h3>
+          <p class="text-emerald-100 mb-6">Full feature access</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold">$79</span>
+            <span class="text-emerald-100">/month</span>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> 1 location</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Unlimited users</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> All features</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> HACCP templates</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Health inspection prep</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> 10GB storage</li>
+            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Priority support</li>
+          </ul>
+          <a href="#cta" class="block text-center bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
+            Start Free Trial
+          </a>
+        </div>
+      </div>
+      <p class="text-center text-gray-600 mt-8">
+        Multi-location? <a href="#cta" class="text-primary font-medium">Contact us</a> for volume pricing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Trusted by restaurants everywhere</h2>
+        <p class="text-xl text-gray-600">See what kitchen managers are saying</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+          <p class="text-gray-600 mb-4">"Our last health inspection was our best ever. The inspector was impressed with our digital records."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+            <div>
+              <p class="font-medium">Maria G.</p>
+              <p class="text-sm text-gray-500">Owner, Maria's Kitchen</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+          <p class="text-gray-600 mb-4">"My staff actually uses it because it's so simple. No more chasing people to fill out paper logs."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+            <div>
+              <p class="font-medium">David K.</p>
+              <p class="text-sm text-gray-500">Kitchen Manager, Urban Eats</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+          <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+          <p class="text-gray-600 mb-4">"The alert when a cooler temp was out of range saved us from a potential food safety disaster."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+            <div>
+              <p class="font-medium">Jennifer T.</p>
+              <p class="text-sm text-gray-500">GM, The Lunch Box Cafe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="py-20 px-4 bg-primary">
+    <div class="max-w-3xl mx-auto text-center text-white">
+      <h2 class="text-3xl font-bold mb-4">Ready to simplify food safety?</h2>
+      <p class="text-xl text-emerald-100 mb-8">Start your 14-day free trial. No credit card required. Cancel anytime.</p>
+      <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white">
+        <button type="submit" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          Get Started
+        </button>
+      </form>
+      <p class="text-emerald-100 text-sm mt-4">
+        Or download the app:
+        <a href="#" class="underline">iOS</a> |
+        <a href="#" class="underline">Android</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-4 bg-gray-900 text-gray-400">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">🍳</span>
+          <span class="text-xl font-bold text-white">KitchenSync</span>
+        </div>
+        <div class="flex gap-8 text-sm">
+          <a href="#" class="hover:text-white">Privacy</a>
+          <a href="#" class="hover:text-white">Terms</a>
+          <a href="#" class="hover:text-white">Support</a>
+          <a href="#" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        <p>&copy; 2026 KitchenSync. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
