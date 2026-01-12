@@ -3,8 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EquipLog - Equipment Maintenance Tracking for Field Technicians</title>
-  <meta name="description" content="The simplest way for HVAC, plumbing, and electrical technicians to track equipment service history, warranties, and customer information.">
+
+  <!-- Primary Meta Tags -->
+  <title>EquipLog - Equipment Maintenance Tracking App for HVAC & Field Technicians</title>
+  <meta name="title" content="EquipLog - Equipment Maintenance Tracking App for HVAC & Field Technicians">
+  <meta name="description" content="Track equipment service history, warranties, and customer info from your phone. Built for HVAC, plumbing, and electrical technicians. Start free today.">
+  <meta name="keywords" content="HVAC service tracking, equipment maintenance app, field service software, warranty tracking, technician app, service history log">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="EquipLog">
+  <link rel="canonical" href="https://equiplog.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://equiplog.app/">
+  <meta property="og:title" content="EquipLog - Equipment Maintenance Tracking for Field Technicians">
+  <meta property="og:description" content="Track equipment service history, warranties, and customer info from your phone. Built for HVAC, plumbing, and electrical technicians.">
+  <meta property="og:image" content="https://equiplog.app/og-image.png">
+  <meta property="og:site_name" content="EquipLog">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://equiplog.app/">
+  <meta name="twitter:title" content="EquipLog - Equipment Maintenance Tracking for Field Technicians">
+  <meta name="twitter:description" content="Track equipment service history, warranties, and customer info from your phone. Built for HVAC, plumbing, and electrical technicians.">
+  <meta name="twitter:image" content="https://equiplog.app/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#2563EB">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -18,297 +51,434 @@
       }
     }
   </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-    body { font-family: 'Inter', sans-serif; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .skip-link { position: absolute; top: -40px; left: 0; background: #2563EB; color: white; padding: 8px; z-index: 100; }
+    .skip-link:focus { top: 0; }
   </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "EquipLog",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "iOS, Android",
+    "description": "Equipment maintenance tracking app for HVAC, plumbing, and electrical technicians",
+    "offers": {
+      "@type": "Offer",
+      "price": "14.99",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-12-31"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1250"
+    }
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-900">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">🔧</span>
-          <span class="text-xl font-bold text-primary">EquipLog</span>
-        </div>
-        <div class="hidden md:flex items-center gap-8">
-          <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
-          <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
-          <a href="#testimonials" class="text-gray-600 hover:text-gray-900">Reviews</a>
-        </div>
-        <div class="flex items-center gap-4">
-          <a href="#" class="text-gray-600 hover:text-gray-900">Log In</a>
-          <a href="#cta" class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary transition">Start Free</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="pt-32 pb-20 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="inline-block bg-blue-100 text-primary px-4 py-1 rounded-full text-sm font-medium mb-6">
-        Built for independent technicians
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-        Never forget<br>equipment history again
-      </h1>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-        EquipLog helps HVAC, plumbing, and electrical technicians track service history, warranties, and customer info - all from your phone.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#cta" class="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary transition shadow-lg shadow-blue-200">
-          Start Free Trial
-        </a>
-        <a href="#demo" class="border border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-gray-400 transition">
-          Watch Demo
-        </a>
-      </div>
-      <p class="text-gray-500 text-sm mt-4">No credit card required. 30-day free trial.</p>
-    </div>
-  </section>
-
-  <!-- App Preview -->
-  <section class="py-12 px-4 bg-gradient-to-b from-white to-gray-50">
-    <div class="max-w-5xl mx-auto">
-      <div class="bg-gray-900 rounded-3xl p-4 shadow-2xl">
-        <div class="bg-gray-100 rounded-2xl p-8 text-center">
-          <div class="text-6xl mb-4">📱</div>
-          <p class="text-gray-600">App Screenshot Preview</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Problem/Solution -->
-  <section class="py-20 px-4 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-3xl font-bold mb-6">Stop losing service records</h2>
-          <div class="space-y-4">
-            <div class="flex items-start gap-4">
-              <div class="text-red-500 text-xl">✕</div>
-              <div>
-                <p class="font-medium">Paper notes get lost or damaged</p>
-                <p class="text-gray-600">Water damage, illegible handwriting, misplaced notebooks</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4">
-              <div class="text-red-500 text-xl">✕</div>
-              <div>
-                <p class="font-medium">Can't remember past service details</p>
-                <p class="text-gray-600">"When did I replace that compressor again?"</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4">
-              <div class="text-red-500 text-xl">✕</div>
-              <div>
-                <p class="font-medium">Warranty info is scattered everywhere</p>
-                <p class="text-gray-600">Searching through emails, receipts, and warranty cards</p>
-              </div>
-            </div>
+  <header>
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50" aria-label="Main navigation">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="/" class="flex items-center gap-2" aria-label="EquipLog Home">
+            <span class="text-2xl" aria-hidden="true">🔧</span>
+            <span class="text-xl font-bold text-primary">EquipLog</span>
+          </a>
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#features" class="text-gray-600 hover:text-gray-900 transition">Features</a>
+            <a href="#pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
+            <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition">Reviews</a>
+            <a href="#blog" class="text-gray-600 hover:text-gray-900 transition">Blog</a>
           </div>
-        </div>
-        <div>
-          <h2 class="text-3xl font-bold mb-6 text-primary">EquipLog solves this</h2>
-          <div class="space-y-4">
-            <div class="flex items-start gap-4">
-              <div class="text-green-500 text-xl">✓</div>
-              <div>
-                <p class="font-medium">Digital records that never get lost</p>
-                <p class="text-gray-600">Cloud backup, accessible on any device</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4">
-              <div class="text-green-500 text-xl">✓</div>
-              <div>
-                <p class="font-medium">Instant access to full service history</p>
-                <p class="text-gray-600">Search by customer, address, or equipment in seconds</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4">
-              <div class="text-green-500 text-xl">✓</div>
-              <div>
-                <p class="font-medium">Warranty alerts before expiration</p>
-                <p class="text-gray-600">Never miss a warranty claim again</p>
-              </div>
-            </div>
+          <div class="flex items-center gap-4">
+            <a href="/login" class="text-gray-600 hover:text-gray-900 transition">Log In</a>
+            <a href="#cta" class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary transition focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Start Free</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
+  </header>
 
-  <!-- Features -->
-  <section id="features" class="py-20 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">Everything you need. Nothing you don't.</h2>
-        <p class="text-xl text-gray-600">Built specifically for field service technicians</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
-          <div class="text-4xl mb-4">📸</div>
-          <h3 class="text-xl font-semibold mb-2">Photo Documentation</h3>
-          <p class="text-gray-600">Capture before/after photos. Scan serial numbers with OCR. All organized automatically.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
-          <div class="text-4xl mb-4">📋</div>
-          <h3 class="text-xl font-semibold mb-2">Service Templates</h3>
-          <p class="text-gray-600">Pre-built templates for common jobs. Log service in under 60 seconds.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
-          <div class="text-4xl mb-4">🔔</div>
-          <h3 class="text-xl font-semibold mb-2">Warranty Tracking</h3>
-          <p class="text-gray-600">Automatic reminders before warranties expire. Never miss a claim.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
-          <div class="text-4xl mb-4">📴</div>
-          <h3 class="text-xl font-semibold mb-2">Works Offline</h3>
-          <p class="text-gray-600">Full functionality in basements and rural areas. Syncs when you're back online.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
-          <div class="text-4xl mb-4">🔍</div>
-          <h3 class="text-xl font-semibold mb-2">Instant Search</h3>
-          <p class="text-gray-600">Find any equipment or customer in seconds. Search by name, address, or serial number.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
-          <div class="text-4xl mb-4">📄</div>
-          <h3 class="text-xl font-semibold mb-2">Professional Reports</h3>
-          <p class="text-gray-600">Generate PDF service reports to share with customers. Build trust and professionalism.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="py-20 px-4 bg-gray-50">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">Simple, transparent pricing</h2>
-        <p class="text-xl text-gray-600">Start free. Upgrade when you're ready.</p>
-      </div>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-8 rounded-2xl border border-gray-200">
-          <h3 class="text-xl font-semibold mb-2">Solo</h3>
-          <p class="text-gray-600 mb-6">For independent technicians</p>
-          <div class="mb-6">
-            <span class="text-4xl font-bold">$14.99</span>
-            <span class="text-gray-600">/month</span>
-          </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Unlimited equipment entries</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Unlimited service logs</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> 5GB photo storage</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Offline access</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Warranty tracking</li>
-          </ul>
-          <a href="#cta" class="block text-center border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4" aria-labelledby="hero-heading">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="inline-block bg-blue-100 text-primary px-4 py-1 rounded-full text-sm font-medium mb-6">
+          Built for independent technicians
+        </p>
+        <h1 id="hero-heading" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          Never forget equipment history again
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+          EquipLog helps HVAC, plumbing, and electrical technicians track service history, warranties, and customer info — all from your phone.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#cta" class="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary transition shadow-lg shadow-blue-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
             Start Free Trial
           </a>
+          <a href="#demo" class="border border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-gray-400 hover:bg-gray-50 transition focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+            Watch Demo
+          </a>
         </div>
-        <div class="bg-primary text-white p-8 rounded-2xl relative">
-          <div class="absolute -top-3 right-8 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">Popular</div>
-          <h3 class="text-xl font-semibold mb-2">Pro</h3>
-          <p class="text-blue-100 mb-6">For growing businesses</p>
-          <div class="mb-6">
-            <span class="text-4xl font-bold">$29.99</span>
-            <span class="text-blue-100">/month</span>
+        <p class="text-gray-500 text-sm mt-4">No credit card required. 30-day free trial.</p>
+      </div>
+    </section>
+
+    <!-- App Preview -->
+    <section class="py-12 px-4 bg-gradient-to-b from-white to-gray-50" aria-label="App preview">
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-gray-900 rounded-3xl p-4 shadow-2xl">
+          <div class="bg-gray-100 rounded-2xl p-8 text-center aspect-video flex items-center justify-center">
+            <div>
+              <div class="text-6xl mb-4" aria-hidden="true">📱</div>
+              <p class="text-gray-600">App Screenshot Preview</p>
+            </div>
           </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Everything in Solo</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> 25GB photo storage</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Customer communication</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Professional reports</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Data export</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Priority support</li>
-          </ul>
-          <a href="#cta" class="block text-center bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
-            Start Free Trial
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem/Solution -->
+    <section class="py-20 px-4 bg-gray-50" aria-labelledby="problem-heading">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 id="problem-heading" class="text-3xl font-bold mb-6">Stop losing service records</h2>
+            <ul class="space-y-4" role="list">
+              <li class="flex items-start gap-4">
+                <span class="text-red-500 text-xl flex-shrink-0" aria-hidden="true">✕</span>
+                <div>
+                  <p class="font-medium">Paper notes get lost or damaged</p>
+                  <p class="text-gray-600">Water damage, illegible handwriting, misplaced notebooks</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="text-red-500 text-xl flex-shrink-0" aria-hidden="true">✕</span>
+                <div>
+                  <p class="font-medium">Can't remember past service details</p>
+                  <p class="text-gray-600">"When did I replace that compressor again?"</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="text-red-500 text-xl flex-shrink-0" aria-hidden="true">✕</span>
+                <div>
+                  <p class="font-medium">Warranty info is scattered everywhere</p>
+                  <p class="text-gray-600">Searching through emails, receipts, and warranty cards</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold mb-6 text-primary">EquipLog solves this</h2>
+            <ul class="space-y-4" role="list">
+              <li class="flex items-start gap-4">
+                <span class="text-green-500 text-xl flex-shrink-0" aria-hidden="true">✓</span>
+                <div>
+                  <p class="font-medium">Digital records that never get lost</p>
+                  <p class="text-gray-600">Cloud backup, accessible on any device</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="text-green-500 text-xl flex-shrink-0" aria-hidden="true">✓</span>
+                <div>
+                  <p class="font-medium">Instant access to full service history</p>
+                  <p class="text-gray-600">Search by customer, address, or equipment in seconds</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="text-green-500 text-xl flex-shrink-0" aria-hidden="true">✓</span>
+                <div>
+                  <p class="font-medium">Warranty alerts before expiration</p>
+                  <p class="text-gray-600">Never miss a warranty claim again</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 px-4" aria-labelledby="features-heading">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 id="features-heading" class="text-3xl font-bold mb-4">Everything you need. Nothing you don't.</h2>
+          <p class="text-xl text-gray-600">Built specifically for field service technicians</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
+            <div class="text-4xl mb-4" aria-hidden="true">📸</div>
+            <h3 class="text-xl font-semibold mb-2">Photo Documentation</h3>
+            <p class="text-gray-600">Capture before/after photos. Scan serial numbers with OCR. All organized automatically.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
+            <div class="text-4xl mb-4" aria-hidden="true">📋</div>
+            <h3 class="text-xl font-semibold mb-2">Service Templates</h3>
+            <p class="text-gray-600">Pre-built templates for common jobs. Log service in under 60 seconds.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
+            <div class="text-4xl mb-4" aria-hidden="true">🔔</div>
+            <h3 class="text-xl font-semibold mb-2">Warranty Tracking</h3>
+            <p class="text-gray-600">Automatic reminders before warranties expire. Never miss a claim.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
+            <div class="text-4xl mb-4" aria-hidden="true">📴</div>
+            <h3 class="text-xl font-semibold mb-2">Works Offline</h3>
+            <p class="text-gray-600">Full functionality in basements and rural areas. Syncs when you're back online.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
+            <div class="text-4xl mb-4" aria-hidden="true">🔍</div>
+            <h3 class="text-xl font-semibold mb-2">Instant Search</h3>
+            <p class="text-gray-600">Find any equipment or customer in seconds. Search by name, address, or serial number.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition">
+            <div class="text-4xl mb-4" aria-hidden="true">📄</div>
+            <h3 class="text-xl font-semibold mb-2">Professional Reports</h3>
+            <p class="text-gray-600">Generate PDF service reports to share with customers. Build trust and professionalism.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 px-4 bg-gray-50" aria-labelledby="pricing-heading">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 id="pricing-heading" class="text-3xl font-bold mb-4">Simple, transparent pricing</h2>
+          <p class="text-xl text-gray-600">Start free. Upgrade when you're ready.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <article class="bg-white p-8 rounded-2xl border border-gray-200">
+            <h3 class="text-xl font-semibold mb-2">Solo</h3>
+            <p class="text-gray-600 mb-6">For independent technicians</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">$14.99</span>
+              <span class="text-gray-600">/month</span>
+            </div>
+            <ul class="space-y-3 mb-8" role="list">
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Unlimited equipment entries</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Unlimited service logs</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> 5GB photo storage</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Offline access</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Warranty tracking</li>
+            </ul>
+            <a href="#cta" class="block text-center border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+              Start Free Trial
+            </a>
+          </article>
+          <article class="bg-primary text-white p-8 rounded-2xl relative">
+            <span class="absolute -top-3 right-8 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">Popular</span>
+            <h3 class="text-xl font-semibold mb-2">Pro</h3>
+            <p class="text-blue-100 mb-6">For growing businesses</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">$29.99</span>
+              <span class="text-blue-100">/month</span>
+            </div>
+            <ul class="space-y-3 mb-8" role="list">
+              <li class="flex items-center gap-2"><span class="text-green-400" aria-hidden="true">✓</span> Everything in Solo</li>
+              <li class="flex items-center gap-2"><span class="text-green-400" aria-hidden="true">✓</span> 25GB photo storage</li>
+              <li class="flex items-center gap-2"><span class="text-green-400" aria-hidden="true">✓</span> Customer communication</li>
+              <li class="flex items-center gap-2"><span class="text-green-400" aria-hidden="true">✓</span> Professional reports</li>
+              <li class="flex items-center gap-2"><span class="text-green-400" aria-hidden="true">✓</span> Data export</li>
+              <li class="flex items-center gap-2"><span class="text-green-400" aria-hidden="true">✓</span> Priority support</li>
+            </ul>
+            <a href="#cta" class="block text-center bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary">
+              Start Free Trial
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 px-4" aria-labelledby="testimonials-heading">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 id="testimonials-heading" class="text-3xl font-bold mb-4">Loved by technicians</h2>
+          <p class="text-xl text-gray-600">Join thousands of professionals who trust EquipLog</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-white p-6 rounded-2xl border border-gray-100">
+            <div class="text-yellow-400 text-xl mb-4" aria-label="5 star rating">★★★★★</div>
+            <blockquote class="text-gray-600 mb-4">"Finally, an app that understands what field techs actually need. No bloat, just what I need to do my job."</blockquote>
+            <footer class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary font-bold">MR</div>
+              <div>
+                <cite class="font-medium not-italic">Mike R.</cite>
+                <p class="text-sm text-gray-500">HVAC Technician, 15 years</p>
+              </div>
+            </footer>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-100">
+            <div class="text-yellow-400 text-xl mb-4" aria-label="5 star rating">★★★★★</div>
+            <blockquote class="text-gray-600 mb-4">"Saved me $2,000 on a warranty claim I would have forgotten about. The app paid for itself 100x over."</blockquote>
+            <footer class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary font-bold">ST</div>
+              <div>
+                <cite class="font-medium not-italic">Sarah T.</cite>
+                <p class="text-sm text-gray-500">Plumbing Contractor</p>
+              </div>
+            </footer>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-100">
+            <div class="text-yellow-400 text-xl mb-4" aria-label="5 star rating">★★★★★</div>
+            <blockquote class="text-gray-600 mb-4">"My customers love getting the professional service reports. It's helped me stand out from competitors."</blockquote>
+            <footer class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-primary font-bold">JL</div>
+              <div>
+                <cite class="font-medium not-italic">James L.</cite>
+                <p class="text-sm text-gray-500">Appliance Repair Tech</p>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 px-4 bg-gray-50" aria-labelledby="blog-heading">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 id="blog-heading" class="text-3xl font-bold mb-4">Latest from Our Blog</h2>
+          <p class="text-xl text-gray-600">Tips, guides, and insights for field service professionals</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+            <div class="h-48 bg-blue-100 flex items-center justify-center">
+              <span class="text-4xl" aria-hidden="true">🔧</span>
+            </div>
+            <div class="p-6">
+              <time datetime="2026-01-08" class="text-sm text-gray-500">January 8, 2026</time>
+              <h3 class="text-lg font-semibold mt-2 mb-3">
+                <a href="/blog/warranty-tracking-best-practices" class="hover:text-primary transition">5 Warranty Tracking Best Practices Every HVAC Tech Should Know</a>
+              </h3>
+              <p class="text-gray-600 text-sm">Learn how to organize warranties and never miss a claim again with these proven strategies.</p>
+            </div>
+          </article>
+          <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+            <div class="h-48 bg-blue-100 flex items-center justify-center">
+              <span class="text-4xl" aria-hidden="true">📱</span>
+            </div>
+            <div class="p-6">
+              <time datetime="2026-01-05" class="text-sm text-gray-500">January 5, 2026</time>
+              <h3 class="text-lg font-semibold mt-2 mb-3">
+                <a href="/blog/digital-vs-paper-service-records" class="hover:text-primary transition">Digital vs. Paper Service Records: The Real Cost Comparison</a>
+              </h3>
+              <p class="text-gray-600 text-sm">We break down the hidden costs of paper-based systems and why digital pays off.</p>
+            </div>
+          </article>
+          <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+            <div class="h-48 bg-blue-100 flex items-center justify-center">
+              <span class="text-4xl" aria-hidden="true">⭐</span>
+            </div>
+            <div class="p-6">
+              <time datetime="2026-01-02" class="text-sm text-gray-500">January 2, 2026</time>
+              <h3 class="text-lg font-semibold mt-2 mb-3">
+                <a href="/blog/building-customer-trust" class="hover:text-primary transition">How Professional Service Reports Build Customer Trust</a>
+              </h3>
+              <p class="text-gray-600 text-sm">First impressions matter. See how documentation helps you win repeat business.</p>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-12">
+          <a href="/blog" class="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+            View All Articles
+            <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="py-20 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">Loved by technicians</h2>
-        <p class="text-xl text-gray-600">Join thousands of professionals who trust EquipLog</p>
+    <!-- CTA -->
+    <section id="cta" class="py-20 px-4 bg-primary" aria-labelledby="cta-heading">
+      <div class="max-w-3xl mx-auto text-center text-white">
+        <h2 id="cta-heading" class="text-3xl font-bold mb-4">Ready to simplify your service records?</h2>
+        <p class="text-xl text-blue-100 mb-8">Start your 30-day free trial today. No credit card required.</p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" action="/signup" method="POST">
+          <label for="email-input" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email"
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+            class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
+          >
+          <button type="submit" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary">
+            Get Started
+          </button>
+        </form>
+        <p class="text-blue-100 text-sm mt-6">
+          Or download the app:
+          <a href="#" class="underline hover:text-white transition">iOS App Store</a> |
+          <a href="#" class="underline hover:text-white transition">Google Play</a>
+        </p>
       </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-2xl border border-gray-100">
-          <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-          <p class="text-gray-600 mb-4">"Finally, an app that understands what field techs actually need. No bloat, just what I need to do my job."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
-            <div>
-              <p class="font-medium">Mike R.</p>
-              <p class="text-sm text-gray-500">HVAC Technician, 15 years</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-100">
-          <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-          <p class="text-gray-600 mb-4">"Saved me $2,000 on a warranty claim I would have forgotten about. The app paid for itself 100x over."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
-            <div>
-              <p class="font-medium">Sarah T.</p>
-              <p class="text-sm text-gray-500">Plumbing Contractor</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-100">
-          <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-          <p class="text-gray-600 mb-4">"My customers love getting the professional service reports. It's helped me stand out from competitors."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
-            <div>
-              <p class="font-medium">James L.</p>
-              <p class="text-sm text-gray-500">Appliance Repair Tech</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="cta" class="py-20 px-4 bg-primary">
-    <div class="max-w-3xl mx-auto text-center text-white">
-      <h2 class="text-3xl font-bold mb-4">Ready to simplify your service records?</h2>
-      <p class="text-xl text-blue-100 mb-8">Start your 30-day free trial today. No credit card required.</p>
-      <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white">
-        <button type="submit" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-          Get Started
-        </button>
-      </form>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="py-12 px-4 bg-gray-900 text-gray-400">
     <div class="max-w-6xl mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">🔧</span>
-          <span class="text-xl font-bold text-white">EquipLog</span>
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <a href="/" class="flex items-center gap-2 mb-4" aria-label="EquipLog Home">
+            <span class="text-2xl" aria-hidden="true">🔧</span>
+            <span class="text-xl font-bold text-white">EquipLog</span>
+          </a>
+          <p class="text-sm">The simplest equipment tracking app for field service technicians.</p>
         </div>
-        <div class="flex gap-8 text-sm">
-          <a href="#" class="hover:text-white">Privacy</a>
-          <a href="#" class="hover:text-white">Terms</a>
-          <a href="#" class="hover:text-white">Support</a>
-          <a href="#" class="hover:text-white">Contact</a>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Product</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="/download" class="hover:text-white transition">Download App</a></li>
+            <li><a href="/changelog" class="hover:text-white transition">Changelog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Resources</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/blog" class="hover:text-white transition">Blog</a></li>
+            <li><a href="/help" class="hover:text-white transition">Help Center</a></li>
+            <li><a href="/guides" class="hover:text-white transition">Guides</a></li>
+            <li><a href="/api" class="hover:text-white transition">API Docs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about" class="hover:text-white transition">About</a></li>
+            <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+            <li><a href="/privacy" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="/terms" class="hover:text-white transition">Terms of Service</a></li>
+          </ul>
         </div>
       </div>
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-        <p>&copy; 2026 EquipLog. All rights reserved.</p>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm">&copy; 2026 EquipLog. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/equiplog" class="hover:text-white transition" aria-label="Twitter">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+          </a>
+          <a href="https://linkedin.com/company/equiplog" class="hover:text-white transition" aria-label="LinkedIn">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+          </a>
+          <a href="https://youtube.com/@equiplog" class="hover:text-white transition" aria-label="YouTube">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>

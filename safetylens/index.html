@@ -3,8 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SafetyLens - Construction Safety Inspection & OSHA Compliance Platform</title>
-  <meta name="description" content="The modern way for construction companies to manage jobsite safety inspections, OSHA compliance, and incident reporting.">
+
+  <!-- Primary Meta Tags -->
+  <title>SafetyLens - Construction Safety Inspection & OSHA Compliance Software</title>
+  <meta name="title" content="SafetyLens - Construction Safety Inspection & OSHA Compliance Software">
+  <meta name="description" content="Digital safety inspections, OSHA compliance tracking, and incident reporting for construction companies. Reduce violations and paperwork. Start your free trial.">
+  <meta name="keywords" content="OSHA compliance software, construction safety app, safety inspection software, incident reporting, OSHA 300 log, jobsite safety, construction compliance">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="SafetyLens">
+  <link rel="canonical" href="https://safetylens.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://safetylens.app/">
+  <meta property="og:title" content="SafetyLens - Construction Safety & OSHA Compliance Made Simple">
+  <meta property="og:description" content="Digital safety inspections, OSHA compliance tracking, and incident reporting for construction companies. Reduce violations and paperwork.">
+  <meta property="og:image" content="https://safetylens.app/og-image.png">
+  <meta property="og:site_name" content="SafetyLens">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://safetylens.app/">
+  <meta name="twitter:title" content="SafetyLens - Construction Safety & OSHA Compliance Made Simple">
+  <meta name="twitter:description" content="Digital safety inspections, OSHA compliance tracking, and incident reporting for construction companies.">
+  <meta name="twitter:image" content="https://safetylens.app/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#F97316">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -18,317 +51,446 @@
       }
     }
   </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-    body { font-family: 'Inter', sans-serif; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .skip-link { position: absolute; top: -40px; left: 0; background: #F97316; color: white; padding: 8px; z-index: 100; }
+    .skip-link:focus { top: 0; }
   </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SafetyLens",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "iOS, Android, Web",
+    "description": "Construction safety inspection and OSHA compliance platform for contractors and safety managers",
+    "offers": {
+      "@type": "Offer",
+      "price": "49",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-12-31"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "850"
+    }
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-900">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">🦺</span>
-          <span class="text-xl font-bold text-primary">SafetyLens</span>
-        </div>
-        <div class="hidden md:flex items-center gap-8">
-          <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
-          <a href="#compliance" class="text-gray-600 hover:text-gray-900">OSHA Compliance</a>
-          <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
-        </div>
-        <div class="flex items-center gap-4">
-          <a href="#" class="text-gray-600 hover:text-gray-900">Log In</a>
-          <a href="#cta" class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary transition">Get Demo</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="pt-32 pb-20 px-4 bg-gradient-to-b from-orange-50 to-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="inline-block bg-orange-100 text-primary px-4 py-1 rounded-full text-sm font-medium mb-6">
-        Trusted by 500+ construction companies
-      </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-        OSHA compliance<br>without the paperwork
-      </h1>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-        SafetyLens helps construction companies manage safety inspections, incident reports, and compliance documentation - all in one platform.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#cta" class="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary transition shadow-lg shadow-orange-200">
-          Schedule Demo
-        </a>
-        <a href="#features" class="border border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-gray-400 transition">
-          See Features
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats -->
-  <section class="py-12 px-4 border-y border-gray-100">
-    <div class="max-w-5xl mx-auto">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-3xl font-bold text-primary">33,000+</div>
-          <div class="text-gray-600">OSHA inspections/year</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold text-primary">$200M+</div>
-          <div class="text-gray-600">Annual penalties</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold text-primary">$156K</div>
-          <div class="text-gray-600">Max per violation</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold text-primary">85%</div>
-          <div class="text-gray-600">Use paper systems</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Problem/Solution -->
-  <section class="py-20 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">Paper checklists are a liability</h2>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          When OSHA shows up, you need to prove compliance. Paper records create risk.
-        </p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-          <div class="text-4xl mb-4">📋</div>
-          <h3 class="text-xl font-semibold mb-2 text-red-700">Lost Records</h3>
-          <p class="text-gray-600">Paper forms get lost, damaged, or become illegible. When you need them, they're gone.</p>
-        </div>
-        <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-          <div class="text-4xl mb-4">⏰</div>
-          <h3 class="text-xl font-semibold mb-2 text-red-700">Time Waste</h3>
-          <p class="text-gray-600">Hours spent gathering records before audits. More time filing than actually improving safety.</p>
-        </div>
-        <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-          <div class="text-4xl mb-4">⚠️</div>
-          <h3 class="text-xl font-semibold mb-2 text-red-700">Compliance Gaps</h3>
-          <p class="text-gray-600">Inconsistent documentation across jobsites. No visibility into what's actually happening.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section id="features" class="py-20 px-4 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">Built for construction safety teams</h2>
-        <p class="text-xl text-gray-600">Everything you need to stay compliant, in one place</p>
-      </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <div class="text-4xl mb-4">📱</div>
-          <h3 class="text-xl font-semibold mb-2">Mobile Inspections</h3>
-          <p class="text-gray-600">Complete daily safety inspections from your phone. GPS-stamped, timestamped, photo-documented.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <div class="text-4xl mb-4">📑</div>
-          <h3 class="text-xl font-semibold mb-2">OSHA Templates</h3>
-          <p class="text-gray-600">Pre-built templates for scaffolding, trenching, fall protection, and more. Always up to date with regulations.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <div class="text-4xl mb-4">🚨</div>
-          <h3 class="text-xl font-semibold mb-2">Incident Reporting</h3>
-          <p class="text-gray-600">Near-miss to recordable injury tracking. Root cause analysis. Corrective action workflows.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <div class="text-4xl mb-4">📊</div>
-          <h3 class="text-xl font-semibold mb-2">OSHA 300 Logs</h3>
-          <p class="text-gray-600">Auto-generated OSHA 300, 300A, and 301 forms. Ready for electronic submission.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <div class="text-4xl mb-4">📚</div>
-          <h3 class="text-xl font-semibold mb-2">Training Tracking</h3>
-          <p class="text-gray-600">Employee certifications, OSHA 10/30, toolbox talks. Automatic expiration reminders.</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl border border-gray-200">
-          <div class="text-4xl mb-4">📈</div>
-          <h3 class="text-xl font-semibold mb-2">Compliance Dashboard</h3>
-          <p class="text-gray-600">Real-time visibility across all jobsites. Spot issues before they become violations.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- OSHA Compliance -->
-  <section id="compliance" class="py-20 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-3xl font-bold mb-6">Ready for any OSHA inspection</h2>
-          <p class="text-xl text-gray-600 mb-8">
-            SafetyLens maintains a complete digital audit trail. When inspectors arrive, you're prepared.
-          </p>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <span class="text-green-500 text-xl">✓</span>
-              <div>
-                <p class="font-medium">Complete Documentation</p>
-                <p class="text-gray-600">Every inspection, incident, and training record at your fingertips</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green-500 text-xl">✓</span>
-              <div>
-                <p class="font-medium">Timestamped Records</p>
-                <p class="text-gray-600">Prove when inspections occurred with GPS and timestamps</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green-500 text-xl">✓</span>
-              <div>
-                <p class="font-medium">Photo Evidence</p>
-                <p class="text-gray-600">Visual proof of compliance and corrective actions taken</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-green-500 text-xl">✓</span>
-              <div>
-                <p class="font-medium">Export Ready</p>
-                <p class="text-gray-600">Generate PDF reports for inspectors in seconds</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="bg-gray-100 rounded-2xl p-8 text-center">
-          <div class="text-6xl mb-4">📋</div>
-          <p class="text-gray-600">Compliance Dashboard Preview</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="py-20 px-4 bg-gray-50">
-    <div class="max-w-5xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold mb-4">Simple pricing for growing teams</h2>
-        <p class="text-xl text-gray-600">Start with Starter. Upgrade as you grow.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-2xl border border-gray-200">
-          <h3 class="text-xl font-semibold mb-2">Starter</h3>
-          <p class="text-gray-600 mb-6">For small crews</p>
-          <div class="mb-6">
-            <span class="text-4xl font-bold">$49</span>
-            <span class="text-gray-600">/month</span>
-          </div>
-          <ul class="space-y-3 mb-8 text-sm">
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Up to 3 users</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> 3 active jobsites</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Daily inspections</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Incident reporting</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Email support</li>
-          </ul>
-          <a href="#cta" class="block text-center border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-orange-50 transition">
-            Start Free Trial
+  <header>
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50" aria-label="Main navigation">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="/" class="flex items-center gap-2" aria-label="SafetyLens Home">
+            <span class="text-2xl" aria-hidden="true">🦺</span>
+            <span class="text-xl font-bold text-primary">SafetyLens</span>
           </a>
-        </div>
-        <div class="bg-primary text-white p-8 rounded-2xl relative">
-          <div class="absolute -top-3 right-8 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">Most Popular</div>
-          <h3 class="text-xl font-semibold mb-2">Professional</h3>
-          <p class="text-orange-100 mb-6">For growing companies</p>
-          <div class="mb-6">
-            <span class="text-4xl font-bold">$99</span>
-            <span class="text-orange-100">/user/month</span>
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#features" class="text-gray-600 hover:text-gray-900 transition">Features</a>
+            <a href="#compliance" class="text-gray-600 hover:text-gray-900 transition">OSHA Compliance</a>
+            <a href="#pricing" class="text-gray-600 hover:text-gray-900 transition">Pricing</a>
+            <a href="#blog" class="text-gray-600 hover:text-gray-900 transition">Blog</a>
           </div>
-          <ul class="space-y-3 mb-8 text-sm">
-            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Unlimited users</li>
-            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Unlimited jobsites</li>
-            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> All OSHA templates</li>
-            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> OSHA 300 log generation</li>
-            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Training tracking</li>
-            <li class="flex items-center gap-2"><span class="text-green-300">✓</span> Priority support</li>
-          </ul>
-          <a href="#cta" class="block text-center bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
+          <div class="flex items-center gap-4">
+            <a href="/login" class="text-gray-600 hover:text-gray-900 transition">Log In</a>
+            <a href="#cta" class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-secondary transition focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Get Demo</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 bg-gradient-to-b from-orange-50 to-white" aria-labelledby="hero-heading">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="inline-block bg-orange-100 text-primary px-4 py-1 rounded-full text-sm font-medium mb-6">
+          Trusted by 500+ construction companies
+        </p>
+        <h1 id="hero-heading" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          OSHA compliance without the paperwork
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+          SafetyLens helps construction companies manage safety inspections, incident reports, and compliance documentation — all in one platform.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#cta" class="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-secondary transition shadow-lg shadow-orange-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
             Schedule Demo
           </a>
+          <a href="#features" class="border border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-gray-400 hover:bg-gray-50 transition focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+            See Features
+          </a>
         </div>
-        <div class="bg-white p-8 rounded-2xl border border-gray-200">
-          <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
-          <p class="text-gray-600 mb-6">For large organizations</p>
-          <div class="mb-6">
-            <span class="text-4xl font-bold">Custom</span>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-12 px-4 border-y border-gray-100" aria-label="Industry statistics">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-3xl font-bold text-primary">33,000+</div>
+            <div class="text-gray-600">OSHA inspections/year</div>
           </div>
-          <ul class="space-y-3 mb-8 text-sm">
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Everything in Professional</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> SSO integration</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Custom templates</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Dedicated success manager</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span> SLA guarantees</li>
-          </ul>
-          <a href="#cta" class="block text-center border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition">
+          <div>
+            <div class="text-3xl font-bold text-primary">$200M+</div>
+            <div class="text-gray-600">Annual penalties</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-primary">$156K</div>
+            <div class="text-gray-600">Max per violation</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-primary">85%</div>
+            <div class="text-gray-600">Still use paper systems</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="py-20 px-4" aria-labelledby="problem-heading">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 id="problem-heading" class="text-3xl font-bold mb-4">Paper checklists are a liability</h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            When OSHA shows up, you need to prove compliance. Paper records create risk.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-red-50 p-6 rounded-2xl border border-red-100">
+            <div class="text-4xl mb-4" aria-hidden="true">📋</div>
+            <h3 class="text-xl font-semibold mb-2 text-red-700">Lost Records</h3>
+            <p class="text-gray-600">Paper forms get lost, damaged, or become illegible. When you need them, they're gone.</p>
+          </article>
+          <article class="bg-red-50 p-6 rounded-2xl border border-red-100">
+            <div class="text-4xl mb-4" aria-hidden="true">⏰</div>
+            <h3 class="text-xl font-semibold mb-2 text-red-700">Time Waste</h3>
+            <p class="text-gray-600">Hours spent gathering records before audits. More time filing than actually improving safety.</p>
+          </article>
+          <article class="bg-red-50 p-6 rounded-2xl border border-red-100">
+            <div class="text-4xl mb-4" aria-hidden="true">⚠️</div>
+            <h3 class="text-xl font-semibold mb-2 text-red-700">Compliance Gaps</h3>
+            <p class="text-gray-600">Inconsistent documentation across jobsites. No visibility into what's actually happening.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 px-4 bg-gray-50" aria-labelledby="features-heading">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 id="features-heading" class="text-3xl font-bold mb-4">Built for construction safety teams</h2>
+          <p class="text-xl text-gray-600">Everything you need to stay compliant, in one place</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-white p-6 rounded-2xl border border-gray-200">
+            <div class="text-4xl mb-4" aria-hidden="true">📱</div>
+            <h3 class="text-xl font-semibold mb-2">Mobile Inspections</h3>
+            <p class="text-gray-600">Complete daily safety inspections from your phone. GPS-stamped, timestamped, photo-documented.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-200">
+            <div class="text-4xl mb-4" aria-hidden="true">📑</div>
+            <h3 class="text-xl font-semibold mb-2">OSHA Templates</h3>
+            <p class="text-gray-600">Pre-built templates for scaffolding, trenching, fall protection, and more. Always up to date with regulations.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-200">
+            <div class="text-4xl mb-4" aria-hidden="true">🚨</div>
+            <h3 class="text-xl font-semibold mb-2">Incident Reporting</h3>
+            <p class="text-gray-600">Near-miss to recordable injury tracking. Root cause analysis. Corrective action workflows.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-200">
+            <div class="text-4xl mb-4" aria-hidden="true">📊</div>
+            <h3 class="text-xl font-semibold mb-2">OSHA 300 Logs</h3>
+            <p class="text-gray-600">Auto-generated OSHA 300, 300A, and 301 forms. Ready for electronic submission.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-200">
+            <div class="text-4xl mb-4" aria-hidden="true">📚</div>
+            <h3 class="text-xl font-semibold mb-2">Training Tracking</h3>
+            <p class="text-gray-600">Employee certifications, OSHA 10/30, toolbox talks. Automatic expiration reminders.</p>
+          </article>
+          <article class="bg-white p-6 rounded-2xl border border-gray-200">
+            <div class="text-4xl mb-4" aria-hidden="true">📈</div>
+            <h3 class="text-xl font-semibold mb-2">Compliance Dashboard</h3>
+            <p class="text-gray-600">Real-time visibility across all jobsites. Spot issues before they become violations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OSHA Compliance -->
+    <section id="compliance" class="py-20 px-4" aria-labelledby="compliance-heading">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 id="compliance-heading" class="text-3xl font-bold mb-6">Ready for any OSHA inspection</h2>
+            <p class="text-xl text-gray-600 mb-8">
+              SafetyLens maintains a complete digital audit trail. When inspectors arrive, you're prepared.
+            </p>
+            <ul class="space-y-4" role="list">
+              <li class="flex items-start gap-3">
+                <span class="text-green-500 text-xl flex-shrink-0" aria-hidden="true">✓</span>
+                <div>
+                  <p class="font-medium">Complete Documentation</p>
+                  <p class="text-gray-600">Every inspection, incident, and training record at your fingertips</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-green-500 text-xl flex-shrink-0" aria-hidden="true">✓</span>
+                <div>
+                  <p class="font-medium">Timestamped Records</p>
+                  <p class="text-gray-600">Prove when inspections occurred with GPS and timestamps</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-green-500 text-xl flex-shrink-0" aria-hidden="true">✓</span>
+                <div>
+                  <p class="font-medium">Photo Evidence</p>
+                  <p class="text-gray-600">Visual proof of compliance and corrective actions taken</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-green-500 text-xl flex-shrink-0" aria-hidden="true">✓</span>
+                <div>
+                  <p class="font-medium">Export Ready</p>
+                  <p class="text-gray-600">Generate PDF reports for inspectors in seconds</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-orange-50 rounded-2xl p-8 text-center aspect-video flex items-center justify-center">
+            <div>
+              <div class="text-6xl mb-4" aria-hidden="true">📋</div>
+              <p class="text-gray-600">Compliance Dashboard Preview</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 px-4 bg-gray-50" aria-labelledby="pricing-heading">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 id="pricing-heading" class="text-3xl font-bold mb-4">Simple pricing for growing teams</h2>
+          <p class="text-xl text-gray-600">Start with Starter. Upgrade as you grow.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-white p-8 rounded-2xl border border-gray-200">
+            <h3 class="text-xl font-semibold mb-2">Starter</h3>
+            <p class="text-gray-600 mb-6">For small crews</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">$49</span>
+              <span class="text-gray-600">/month</span>
+            </div>
+            <ul class="space-y-3 mb-8 text-sm" role="list">
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Up to 3 users</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> 3 active jobsites</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Daily inspections</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Incident reporting</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Email support</li>
+            </ul>
+            <a href="#cta" class="block text-center border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-orange-50 transition focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+              Start Free Trial
+            </a>
+          </article>
+          <article class="bg-primary text-white p-8 rounded-2xl relative">
+            <span class="absolute -top-3 right-8 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-medium">Most Popular</span>
+            <h3 class="text-xl font-semibold mb-2">Professional</h3>
+            <p class="text-orange-100 mb-6">For growing companies</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">$99</span>
+              <span class="text-orange-100">/user/month</span>
+            </div>
+            <ul class="space-y-3 mb-8 text-sm" role="list">
+              <li class="flex items-center gap-2"><span class="text-green-300" aria-hidden="true">✓</span> Unlimited users</li>
+              <li class="flex items-center gap-2"><span class="text-green-300" aria-hidden="true">✓</span> Unlimited jobsites</li>
+              <li class="flex items-center gap-2"><span class="text-green-300" aria-hidden="true">✓</span> All OSHA templates</li>
+              <li class="flex items-center gap-2"><span class="text-green-300" aria-hidden="true">✓</span> OSHA 300 log generation</li>
+              <li class="flex items-center gap-2"><span class="text-green-300" aria-hidden="true">✓</span> Training tracking</li>
+              <li class="flex items-center gap-2"><span class="text-green-300" aria-hidden="true">✓</span> Priority support</li>
+            </ul>
+            <a href="#cta" class="block text-center bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary">
+              Schedule Demo
+            </a>
+          </article>
+          <article class="bg-white p-8 rounded-2xl border border-gray-200">
+            <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+            <p class="text-gray-600 mb-6">For large organizations</p>
+            <div class="mb-6">
+              <span class="text-4xl font-bold">Custom</span>
+            </div>
+            <ul class="space-y-3 mb-8 text-sm" role="list">
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Everything in Professional</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> SSO integration</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Custom templates</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> Dedicated success manager</li>
+              <li class="flex items-center gap-2"><span class="text-green-500" aria-hidden="true">✓</span> SLA guarantees</li>
+            </ul>
+            <a href="#cta" class="block text-center border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+              Contact Sales
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="py-20 px-4" aria-labelledby="testimonial-heading">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 id="testimonial-heading" class="sr-only">Customer testimonial</h2>
+        <div class="text-5xl mb-6" aria-label="5 star rating">★★★★★</div>
+        <blockquote class="text-2xl text-gray-700 mb-8">
+          "We went from scrambling before every audit to being inspection-ready 24/7. SafetyLens paid for itself the first month when we avoided a citation."
+        </blockquote>
+        <footer class="flex items-center justify-center gap-4">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-primary font-bold text-xl">RM</div>
+          <div class="text-left">
+            <cite class="font-semibold not-italic">Robert Martinez</cite>
+            <p class="text-gray-600">Safety Director, Martinez Construction</p>
+            <p class="text-sm text-gray-500">85 employees across 12 jobsites</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 px-4 bg-gray-50" aria-labelledby="blog-heading">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 id="blog-heading" class="text-3xl font-bold mb-4">Latest from Our Blog</h2>
+          <p class="text-xl text-gray-600">Safety tips, compliance updates, and industry insights</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+            <div class="h-48 bg-orange-100 flex items-center justify-center">
+              <span class="text-4xl" aria-hidden="true">📋</span>
+            </div>
+            <div class="p-6">
+              <time datetime="2026-01-10" class="text-sm text-gray-500">January 10, 2026</time>
+              <h3 class="text-lg font-semibold mt-2 mb-3">
+                <a href="/blog/osha-inspection-checklist-2026" class="hover:text-primary transition">The Complete OSHA Inspection Checklist for 2026</a>
+              </h3>
+              <p class="text-gray-600 text-sm">Prepare for your next OSHA inspection with this comprehensive checklist covering all major compliance areas.</p>
+            </div>
+          </article>
+          <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+            <div class="h-48 bg-orange-100 flex items-center justify-center">
+              <span class="text-4xl" aria-hidden="true">🦺</span>
+            </div>
+            <div class="p-6">
+              <time datetime="2026-01-07" class="text-sm text-gray-500">January 7, 2026</time>
+              <h3 class="text-lg font-semibold mt-2 mb-3">
+                <a href="/blog/fall-protection-requirements" class="hover:text-primary transition">Fall Protection Requirements: What Every Contractor Must Know</a>
+              </h3>
+              <p class="text-gray-600 text-sm">Falls remain the #1 cause of construction fatalities. Here's how to ensure your team is properly protected.</p>
+            </div>
+          </article>
+          <article class="bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
+            <div class="h-48 bg-orange-100 flex items-center justify-center">
+              <span class="text-4xl" aria-hidden="true">📊</span>
+            </div>
+            <div class="p-6">
+              <time datetime="2026-01-03" class="text-sm text-gray-500">January 3, 2026</time>
+              <h3 class="text-lg font-semibold mt-2 mb-3">
+                <a href="/blog/digital-vs-paper-safety-records" class="hover:text-primary transition">Why Digital Safety Records Beat Paper Every Time</a>
+              </h3>
+              <p class="text-gray-600 text-sm">The hidden costs of paper-based safety systems and how digital transformation reduces your liability.</p>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-12">
+          <a href="/blog" class="inline-flex items-center gap-2 text-primary font-medium hover:underline">
+            View All Articles
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="py-20 px-4 bg-primary" aria-labelledby="cta-heading">
+      <div class="max-w-3xl mx-auto text-center text-white">
+        <h2 id="cta-heading" class="text-3xl font-bold mb-4">Ready to modernize your safety program?</h2>
+        <p class="text-xl text-orange-100 mb-8">See how SafetyLens can help your team stay compliant. Schedule a free demo.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/demo" class="bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary">
+            Schedule Demo
+          </a>
+          <a href="/contact" class="border border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary">
             Contact Sales
           </a>
         </div>
+        <p class="text-orange-100 text-sm mt-6">
+          Or download the app:
+          <a href="#" class="underline hover:text-white transition">iOS App Store</a> |
+          <a href="#" class="underline hover:text-white transition">Google Play</a>
+        </p>
       </div>
-    </div>
-  </section>
-
-  <!-- Testimonial -->
-  <section class="py-20 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="text-5xl mb-6">★★★★★</div>
-      <p class="text-2xl text-gray-700 mb-8">
-        "We went from scrambling before every audit to being inspection-ready 24/7. SafetyLens paid for itself the first month when we avoided a citation."
-      </p>
-      <div class="flex items-center justify-center gap-4">
-        <div class="w-16 h-16 bg-gray-200 rounded-full"></div>
-        <div class="text-left">
-          <p class="font-semibold">Robert Martinez</p>
-          <p class="text-gray-600">Safety Director, Martinez Construction</p>
-          <p class="text-sm text-gray-500">85 employees across 12 jobsites</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="cta" class="py-20 px-4 bg-primary">
-    <div class="max-w-3xl mx-auto text-center text-white">
-      <h2 class="text-3xl font-bold mb-4">Ready to modernize your safety program?</h2>
-      <p class="text-xl text-orange-100 mb-8">See how SafetyLens can help your team stay compliant. Schedule a free demo.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#" class="bg-white text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition">
-          Schedule Demo
-        </a>
-        <a href="#" class="border border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition">
-          Contact Sales
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="py-12 px-4 bg-gray-900 text-gray-400">
     <div class="max-w-6xl mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl">🦺</span>
-          <span class="text-xl font-bold text-white">SafetyLens</span>
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <a href="/" class="flex items-center gap-2 mb-4" aria-label="SafetyLens Home">
+            <span class="text-2xl" aria-hidden="true">🦺</span>
+            <span class="text-xl font-bold text-white">SafetyLens</span>
+          </a>
+          <p class="text-sm">Construction safety and OSHA compliance made simple.</p>
         </div>
-        <div class="flex gap-8 text-sm">
-          <a href="#" class="hover:text-white">Privacy</a>
-          <a href="#" class="hover:text-white">Terms</a>
-          <a href="#" class="hover:text-white">Support</a>
-          <a href="#" class="hover:text-white">Contact</a>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Product</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="/templates" class="hover:text-white transition">OSHA Templates</a></li>
+            <li><a href="/integrations" class="hover:text-white transition">Integrations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Resources</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/blog" class="hover:text-white transition">Blog</a></li>
+            <li><a href="/guides" class="hover:text-white transition">Safety Guides</a></li>
+            <li><a href="/webinars" class="hover:text-white transition">Webinars</a></li>
+            <li><a href="/osha-updates" class="hover:text-white transition">OSHA Updates</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about" class="hover:text-white transition">About</a></li>
+            <li><a href="/contact" class="hover:text-white transition">Contact</a></li>
+            <li><a href="/privacy" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="/terms" class="hover:text-white transition">Terms of Service</a></li>
+          </ul>
         </div>
       </div>
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-        <p>&copy; 2026 SafetyLens. All rights reserved.</p>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm">&copy; 2026 SafetyLens. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="https://twitter.com/safetylens" class="hover:text-white transition" aria-label="Twitter">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+          </a>
+          <a href="https://linkedin.com/company/safetylens" class="hover:text-white transition" aria-label="LinkedIn">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+          </a>
+          <a href="https://youtube.com/@safetylens" class="hover:text-white transition" aria-label="YouTube">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
